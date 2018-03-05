@@ -10,6 +10,8 @@ namespace ExercisesPM
     {
         static void Main(string[] args)
         {
+            FirstXNubersFinder.FindFirstXNumbersGreaterOrEqualThanYDivByZAndNotDivByQ(10, 66, 2, 3);
+            Console.ReadKey();
         }
     }
 }

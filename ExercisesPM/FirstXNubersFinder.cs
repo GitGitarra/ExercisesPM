@@ -14,6 +14,9 @@ namespace ExercisesPM
 
             try
             {
+                if (x <= 0) throw new
+                        ArgumentException("x must be greater then 0");
+
                 List<int> result = new List<int>();
 
                 while (result.Count() < x)
@@ -29,11 +32,16 @@ namespace ExercisesPM
                 {
                     Console.WriteLine(i);
                 }
-            } catch (DivideByZeroException)
+            }
+            catch (DivideByZeroException)
             {
                 Console.WriteLine("Arguments z and q must be greater then O");
             }
-            
+            catch (ArgumentException)
+            {
+                Console.WriteLine("x must be greater then 0");
+            }
+
         }
 
     }

@@ -11,21 +11,29 @@ namespace ExercisesPM
 
         public static void FindFirstXNumbersGreaterOrEqualThanYDivByZAndNotDivByQ(int x, int y, int z, int q)
         {
-            List<int> result = new List<int>();
 
-            while (result.Count() < x)
+            try
             {
-                if ((y % z == 0) && (y % q != 0))
+                List<int> result = new List<int>();
+
+                while (result.Count() < x)
                 {
-                    result.Add(y);
+                    if ((y % z == 0) && (y % q != 0))
+                    {
+                        result.Add(y);
+                    }
+                    y++;
                 }
-                y++;
-            }
 
-            foreach (int i in result)
+                foreach (int i in result)
+                {
+                    Console.WriteLine(i);
+                }
+            } catch (DivideByZeroException)
             {
-                Console.WriteLine(i);
+                Console.WriteLine("Arguments z and q must be greater then O");
             }
+            
         }
 
     }

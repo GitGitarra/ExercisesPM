@@ -10,7 +10,13 @@ namespace ExercisesPM
     {
         static void Main(string[] args)
         {
-            FirstXNubersFinder.FindFirstXNumbersGreaterOrEqualThanYDivByZAndNotDivByQ(10, 66, 2, 3);
+            FirstXNubersFinder.FindFirstXNumbersGreaterOrEqualThanYDivByZAndNotDivByQ(6, 100, 3, 2);
+
+            SumOfFirstXOddNumbers.Count(3, 20);
+
+            var myList = new List<int>() { 4, 15, 7, 2, 9 };
+            LowestElemnentsFinder.FindElements(myList, 3);
+
             Console.ReadKey();
         }
     }
